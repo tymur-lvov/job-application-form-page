@@ -1,0 +1,111 @@
+input:focus,
+textarea:focus {
+  border-color: yellow;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+button:hover {
+  background-color: green;
+}
+.radio-group input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: border-color 300ms;
+}
+input {
+  transition: border-color 300ms;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: inset 0 0 0 4px white;
+}
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+body {
+  padding: 80px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+h1 {
+  text-align: center;
+}
+label:not(fieldset label),
+textarea {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input:not(fieldset input),
+select:not(fieldset select) {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+fieldset {
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+fieldset div {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+fieldset input {
+  margin: 0;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 300ms ease;
+}
+button {
+  width: 100%;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  transition: background-color 300ms ease;
+}
+button:hover {
+  background-color: sienna;
+}
+input::placeholder,
+textarea::placeholder {
+  color: gray;
+  font-weight: lighter;
+}
+legend {
+  font-weight: bold;
+}
